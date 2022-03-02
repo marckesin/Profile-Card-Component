@@ -8,7 +8,7 @@
 }
 
 .avatar {
-  position: absolute;
+  position: absolute !important;
   top: 9rem;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -18,17 +18,32 @@
 .card {
   width: 22rem;
   height: 24rem;
-  border-radius: 0.75rem;
+  border-radius: 0.75rem !important;
   display: flex;
   flex-direction: column;
   position: relative;
   text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.16) 0 10px 36px 0, rgba(0, 0, 0, 0.06) 0 0 0 1px;
 }
 
-.cardUp {
-  width: 100%;
-  height: 9rem;
-  background: url("../public/bg-pattern-card.svg");
+.cardDown {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  gap: 3.2rem;
+}
+.cardDown h5 {
+  padding-top: 1.3rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 0.2rem;
+  color: #2d3248;
+}
+.cardDown p {
+  font-size: 0.65rem;
+  letter-spacing: 2px;
+  color: #969696;
+  font-weight: 700;
 }
 
 .cardMiddle {
@@ -48,8 +63,10 @@
   padding-left: 0.2rem;
 }
 
-.cardDown {
-  flex-grow: 1;
+.cardUp {
+  width: 100%;
+  height: 9rem;
+  background: url("../public/bg-pattern-card.svg");
 }
 
 .container {
@@ -113,8 +130,16 @@
 }
 
 @media (max-width: 600px) {
+  .card {
+    width: 100%;
+  }
+
+  .cardDown {
+    gap: 2.8rem;
+  }
+
   .container {
-    padding: 0 2rem;
+    padding: 0 1.5rem 0.5rem;
   }
 }
 
