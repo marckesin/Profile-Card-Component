@@ -1,0 +1,33 @@
+{
+  "name": "profile-card-component-main",
+  "version": "1.0.0",
+  "description": "This is a solution to the [Profile card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/profile-card-component-cfArpWshJ). Frontend Mentor challenges help you improve your coding skills by building realistic projects.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "12.1.0",
+    "react": "17.0.2",
+    "react-dom": "17.0.2"
+  },
+  "devDependencies": {
+    "eslint": "8.10.0",
+    "eslint-config-next": "12.1.0"
+  },
+  "keywords": [
+    "next",
+    "react",
+    "vercel",
+    "mui"
+  ],
+  "author": "Ronaldo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/marckesin/Profile-Card-Component/issues"
+  },
+  "homepage": "https://github.com/marckesin/Profile-Card-Component#readme"
+}
