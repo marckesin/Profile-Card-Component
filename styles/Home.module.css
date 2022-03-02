@@ -1,3 +1,57 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: white;
+}
+.attribution a {
+  color: whitesmoke;
+}
+
+.avatar {
+  position: absolute;
+  top: 9rem;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 5px solid white;
+}
+
+.card {
+  width: 22rem;
+  height: 24rem;
+  border-radius: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  text-align: center;
+}
+
+.cardUp {
+  width: 100%;
+  height: 9rem;
+  background: url("../public/bg-pattern-card.svg");
+}
+
+.cardMiddle {
+  width: 100%;
+  height: 9.5rem;
+  border-bottom: 1px solid #d4d4d4;
+  color: #2d3248;
+}
+.cardMiddle p {
+  font-size: 0.85rem;
+  padding-top: 0.4rem;
+  color: #969696;
+}
+.cardMiddle span {
+  font-weight: 400;
+  color: #969696;
+  padding-left: 0.2rem;
+}
+
+.cardDown {
+  flex-grow: 1;
+}
+
 .container {
   padding: 0 2rem;
   height: 100vh;
@@ -5,6 +59,34 @@
   flex-direction: column;
   justify-content: space-between;
   padding-bottom: 0.5rem;
+  background: url("../public/bg-pattern-top.svg");
+  background-repeat: no-repeat;
+  background-position: -100% 140%;
+  position: relative;
+}
+
+.container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("../public/bg-pattern-bottom.svg");
+  background-repeat: no-repeat;
+  background-position: 180% -80%;
+  z-index: -1;
+}
+
+.container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #19a2ae;
+  z-index: -1;
 }
 
 .main {
@@ -22,6 +104,12 @@
   border-top: 1px solid #eaeaea;
   justify-content: center;
   align-items: center;
+}
+
+.name {
+  font-size: 1.125rem;
+  margin: 4.75rem 0 0;
+  font-weight: 700;
 }
 
 @media (max-width: 600px) {

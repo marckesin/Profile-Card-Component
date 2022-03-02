@@ -1,5 +1,7 @@
+import Avatar from "@mui/material/Avatar";
+import Card from "@mui/material/Card";
+import Footer from "../components/footer";
 import Head from "next/head";
-import Image from "next/image";
 import styles from "../styles/Home.module.css";
 
 // Home component to render the landing page
@@ -12,20 +14,29 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}></main>
+      <main className={styles.main}>
+        <Card className={styles.card}>
+          <div className={styles.cardUp}></div>
+          <div className={styles.cardMiddle}>
+            <h1 className={styles.name}>
+              {" "}
+              Victor Crest <span>26</span>{" "}
+            </h1>
 
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{" "}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </a>
-      </footer>
+            <p>London</p>
+          </div>
+          <div className={styles.cardDown}>
+            80K Followers 803K Likes 1.4K Photos
+          </div>
+          <Avatar
+            className={styles.avatar}
+            alt="User Photo"
+            src="/image-victor.jpg"
+            sx={{ width: 102, height: 102 }}
+          />
+        </Card>
+      </main>
+      <Footer />
     </div>
   );
 }
