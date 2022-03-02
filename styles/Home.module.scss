@@ -37,7 +37,7 @@ $dark-gray: hsl(0, 0%, 59%);
   flex-direction: column;
   position: relative;
   text-align: center;
-  box-shadow: rgba(0, 0, 0, 0.16) 0 10px 36px 0, rgba(0, 0, 0, 0.06) 0 0 0 1px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0 10px 36px 0, rgba(0, 0, 0, 0.06) 0 0 0 1px !important;
 }
 
 .cardDown {
