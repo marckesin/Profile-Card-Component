@@ -2,6 +2,7 @@ import Avatar from "@mui/material/Avatar";
 import Card from "@mui/material/Card";
 import styles from "../styles/Home.module.css";
 
+// Card profile component
 export default function CardProfile() {
   return (
     <Card className={styles.card}>
