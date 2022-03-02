@@ -32,7 +32,7 @@
   justify-content: center;
   gap: 3.2rem;
 }
-.cardDown h5 {
+.cardDown .status {
   padding-top: 1.3rem;
   font-size: 1.2rem;
   font-weight: 700;

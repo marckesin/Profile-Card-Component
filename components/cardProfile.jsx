@@ -2,7 +2,7 @@ import Avatar from "@mui/material/Avatar";
 import Card from "@mui/material/Card";
 import styles from "../styles/Home.module.css";
 
-// Card profile component
+// Card profile
 export default function CardProfile() {
   return (
     <Card className={styles.card}>
@@ -18,15 +18,15 @@ export default function CardProfile() {
       <div className={styles.cardDown}>
         <div>
           {" "}
-          <h5>80K</h5> <p>Followers</p>{" "}
+          <p className={styles.status}>80K</p> <p>Followers</p>{" "}
         </div>
         <div>
           {" "}
-          <h5>803K</h5> <p>Likes</p>{" "}
+          <p className={styles.status}>803K</p> <p>Likes</p>{" "}
         </div>
         <div>
           {" "}
-          <h5>1.4K</h5> <p>Photos</p>{" "}
+          <p className={styles.status}>1.4K</p> <p>Photos</p>{" "}
         </div>
       </div>
       <Avatar
